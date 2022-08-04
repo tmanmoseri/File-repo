@@ -1,0 +1,62 @@
+Docker
+
+To list all running Docker containers
+-------------------------------------
+docker ps
+
+
+To list all containers, both running and stopped
+------------------------------------------------
+docker ps –a
+
+
+To list containers by their ID
+------------------------------
+docker ps –aq
+
+
+To list the latest created containers,
+-------------------------------------
+docker ps –l
+
+
+
+to launch or start a single or multiple stopped Docker containers 
+-----------------------------------------------------------------
+docker start [options] container_id
+
+
+use the attach command to connect to a running container
+--------------------------------------------------------
+docker attach container_id
+
+
+To start the running container in interactive mode
+---------------------------------------------------
+docker run –it ––name=Ubuntu_Test ubuntu:14.04
+
+
+stop service from running
+---------------------------
+docker stop -t 10 my_container/container_id
+
+
+To see the logs of an already running service or alternatively:
+---------------------------------------------------------------
+docker logs -t -f my_container/container_id
+
+
+To stop all running containers
+-------------------------------
+docker stop $(docker ps –a –q)
+
+
+To immediately kill a docker container without waiting for the grace period to end
+----------------------------------------------------------------------------------
+docker kill [option] container_id
+
+
+
+
+
+

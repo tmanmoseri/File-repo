@@ -1,0 +1,57 @@
+
+---------------------
+Animation Properties
+---------------------
+
+animation:
+
+ name
+
+ duration
+
+ timing-function
+ 
+delay 
+ 
+ iteration-count 
+
+ direction 
+
+ fill-mode 
+
+ play-state;
+
+
+
+
+ animation: 
+ 
+ myAnimationName 
+
+ s/ms 
+
+ ease/ease-out/ease-in/ease-in-out/linear/cubic-bezier 
+
+ s/ms 
+
+ normal/alternate/infinite 
+
+ forwards/backwards/both/none 
+
+ paused/running/running;
+
+ 
+ 
+
+
+ animation:
+ stretch
+ 1.5s
+ ease-out
+ 0s
+ alternate
+ infinite
+ none
+ running;
+ 
+ 

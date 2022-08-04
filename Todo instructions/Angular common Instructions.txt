@@ -1,0 +1,171 @@
+
+
+create an angular app
+
+----------------------------
+
+
+
+Angular command-line interface (CLI)
+
+------------------------------------
+
+npm install -g @angular/cli
+
+
+
+Install Ionic CLI
+
+-----------------
+
+npm install -g @ionic/cli
+
+
+
+
+Install latest ionic command-line interface (CLI)
+
+-----------------------------------
+
+npm i -g @ionic/cli@latest
+
+
+
+Add Ionic to project:
+
+---------------------
+
+ng add @ionic/angular
+
+
+
+Initialize the app project with ionic
+
+-----------------------------------------------
+
+
+
+ionic init
+
+ to create, build, and serve a new, basic Angular project
+
+--------------------------------------------------------
+
+ng new vitual-consultation
+
+cd vitual-consultation
+ng serve
+
+
+
+
+
+generating a component
+
+-----------------------
+
+ng g c pages/dashboard
+
+
+
+
+generating a module with routing
+
+--------------------------------
+
+ng g m pages/dashboard --routing
+
+
+
+
+Generates main app routing
+
+---------------------------
+
+//--- Components
+import { ComponentName } from './home/home.component';
+
+
+
+const routes: Routes = [
+  
+	//--- External direct links
+  {
+
+    loadChildren: () => import('./pages/modulename.module').then((m) => m.RequestModule),
+
+  },
+  
+	//--- Internal routes
+  {
+    
+	path: '',
+    redirectTo: 'home',
+
+    	pathMatch: 'full',
+  
+  },
+
+  {
+    path: 'pages/my-profile',
+
+    loadChildren: () => import('./pages/my-profile/my-profile.module').then((m) => m.MyProfileModule)
+,
+  },
+
+  {
+    path: 'pages/view-account',
+    
+	loadChildren: () => import('./pages/view-account/view-account.module').then((m) => m.ViewAccountModule),
+
+  },
+
+  {
+
+    path: '**',
+
+    redirectTo: 'home',
+
+    pathMatch: 'full',
+  },
+
+];
+
+
+
+
+
+Generates component routing
+
+---------------------------
+
+
+import { RouterModule, Routes } from '@angular/router';
+
+
+//--- Components
+import { ComponentName } from './component-name.component'
+;
+
+const routes: Routes = [
+  
+{
+
+    path: '',
+
+    component: ComponentName,
+
+  },
+
+  
+{
+    path: '**',
+
+    redirectTo: '',
+
+  },
+
+];
+
+
+

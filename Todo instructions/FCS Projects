@@ -1,0 +1,20 @@
+
+========================================
+
+BACKEND
+-------
+
+terminal - sudo service redis-server start
+
+docker- start container
+
+cd backend 
+terminal - npm run dev
+===========================================
+
+FRONTEND
+--------
+
+Open terminal - ionic serve
+
+===========================================

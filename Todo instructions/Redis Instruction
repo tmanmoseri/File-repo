@@ -1,0 +1,9 @@
+
+Redis key value (6379)
+
+Enable redis
+------------
+
+sudo service redis-server start
+
+

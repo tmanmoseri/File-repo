@@ -1,0 +1,24 @@
+NodeJs express server
+
+Add a server
+------------
+mkdir server
+
+cd server/
+
+Command 'vim can be installed with
+--------------------
+sudo apt install vim
+
+
+ ensure you are command mode by hitting the Esc key
+
+vim signalling_server.js
+
+Type  :qa!  and press <Enter> to abandon all changes and exit Vim 
+
+strarting the nodeJs server
+---------------------------
+node signalling_server.js
+
+

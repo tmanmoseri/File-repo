@@ -1,0 +1,10 @@
+Git Instructions
+
+Checking out branch repo
+------------------------
+git fetch origin
+git checkout branch_name
+
+
+
+

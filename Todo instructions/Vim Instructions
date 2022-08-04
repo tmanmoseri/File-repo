@@ -1,0 +1,62 @@
+Vim instructions
+
+Command 'vim can be installed with
+----------------------------------
+sudo apt install vim
+
+to open a vim file
+------------------
+vim fileName
+
+To enable paste mode
+----------------------
+ensure you are command mode by hitting the Esc key
+
+Type “:set paste” to enter command mode.
+
+Type “i” to enter paste mode. Notice the “– INSERT (paste) –” at the bottom of the Vim window.
+
+Paste your Python code into Vim. 
+
+To exit paste mode, type “:set nopaste”. Notice the “– INSERT –” at the bottom of the Vim window. This means you are back to normal insert
+
+write (save) the file, but don't exit
+-------------------------------------
+:w
+
+write out the current file using sudo
+-------------------------------------
+:w !sudo tee %
+
+
+quit and throw away unsaved changes
+-----------------------------------
+:q! or ZQ
+
+write (save) and quit
+---------------------
+:wq or :x or ZZ
+
+write (save) and quit on all tabs
+---------------------------------
+:wqa
+
+Save the file
+-------------
+:w
+
+
+to abandon all changes and exit Vim
+-----------------------------------
+Type  :qa!  and press <Enter>  
+
+Quit Vim
+--------
+:q  and press <Enter>  
+
+
+
+
+
+
+
